@@ -2,6 +2,6 @@
 
 interface TemplateInterface
 {
-    public function __construct(string $path, string $extension = 'php');
+    public function init(string $path, string $extension = 'php', array $extensions = []);
     public function render(string $name, array $params = []): string;
 }
